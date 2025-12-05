@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8" />
+<!-- Imposta il viewport per il responsive design: width=device-width adatta la larghezza alla dimensione dello schermo, initial-scale=1 definisce lo zoom iniziale, shrink-to-fit=no evita il ridimensionamento automatico -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="sito Ducati e Sostenibilità" content="" />
+        <meta name="Aniello Cipriano" content="" />
+        <title>Ducati e Sostenibilità</title>
+        <!-- Favicon link piccola icona di riferimento che compare nell’indirizzo broswer del sito-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!--link a google font per stile caratteri in questo caso ho scelto Roboto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Bootstrap link icons utilizzata per non caricare direttamente la libreria nello spazio del sito-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- link CSS file di regole di stile del sito-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head> 
+<!-- Classe d-flex per creare un contenitore flessibile -->
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+     <!--barra navigazione fissa in alto con logo a sinistra e 3 link alle diverse sezioni del sito -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-white bg-white">
+                <div class="container px-5">
+                <a class="logo" href="index.html"><img src="assets/img/logo_ducati.png" width="50" height="auto" alt="logo ducati" /></a>
+<-- a 991px di larghezza schermo compare pulsante navbar-toggler che fa comparire un menu a tendina con i link alle varie sezioni-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#multistrada">Modelli</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sostenibilità">Sostenibilità</a></li>
+              </ul></div></div></nav>
+    <!-- Header parte introduttiva con immagine fissa scritta titolo con la classe display per renderla piu grande e d’effetto e pulsante d’ingresso sito-->
+       <header class="bg-dark py-5">
+             <div class="container px-5">
+               <div class="row gx-5 align-items-left justify-content-left">
+                   <div class="col-lg-8 col-xl-7 col-xxl-6">
+                     <div class="my-5 text-center text-xl-start">
+                     <h2 class="display-6 text-white mb-2">DUCATI WORLD PREMIERE 2026</h2>
+                    <h1 class="display-4 fw-bolder text-white mb-2">Nuova Multistrada V4 Rally</h1>
+      <p class="lead fw-normal text-white-50 mb-4">Progettata per accompagnarti ovunque! </p>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+              <a class="btn btn-outline-danger btn-lg px-5 me-sm-3" href="#multistrada">Scopri</a>
+           </div></div></div></div></header>
+            <!-- Sezione introduttiva ai modelli ducati con pulsante btn -->
+            <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+<!-- titolo h1 di grande dimensioni  -->
+      <h1 class="fw-bolder mb-3">Sprigiona la tua passione per le moto con i nostri modelli.</h1>
+<p class="lead fw-normal text-muted mb-4">Direttamente dal mondo delle corse, i nostri modelli sono progettati per offrire prestazioni eccezionali e un'esperienza di guida senza pari.</p>
+<!-- pulsante che introduce ai modellelli grazie al puntatore href=”#multistrada”-->
+                   <a class="btn btn-outline-danger btn-lg" href="#multistrada">Scopri</a>
+                 </div></div></div></div>
+          <!-- Modello uno: sezione caratterizzata da varie sottoclassi composte da una riga unica e due colonne con stessa dimensione (col-lg-6) dove sono posizionati rispettivamente immagine e testo descrittivo-->
+            <section class="py-5 bg-light" id="multistrada">
+                <div class="container px-5 my-5">
+<!--riga con 2 colonne uguali e testo allineato al centro-->
+                    <div class="row gx-5 align-items-center">
+<div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/img/Multistrada-V4.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Multistrada V4 Rally</h2>
+                            <p class="lead fw-normal text-muted mb-0">La Multistrada V4 Rally è progettata per affrontare qualsiasi avventura, sia su strada che off-road. Con il suo motore potente e le sospensioni avanzate, offre un'esperienza di guida senza pari.</p><br>
+   <p class="lead fw-normal text-muted mb-0">Per chi è alla ricerca di nuove avventure</p><br>
+                   <p class="lead fw-normal text-muted mb-0">A partire da 29900 €</p>
+                 </div></div></div>
+              <div class="text-center mt-5">
+<!--pulsante con la classe lampeggiange con il medesimo effetto -->
+                    <a class="btn btn-outline-danger btn-sm" href="#scrambler">
+                        <i class="bi bi-caret-down fs-1 lampeggiante"></i></a></div></section>
+            <!--Modello due stessa composizione del modello 1-->
+            <section class="py-5" id="scrambler">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+<div class="col-lg-6 first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/img/Scrambler-Nightshift.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Scrambler Nightshift</h2>
+                            <p class="lead fw-normal text-muted mb-0">La Scrambler Nightshift è una moto che unisce stile e prestazioni. Con il suo design minimalista e il motore potente, è perfetta per la guida in città e per le avventure nel weekend.</p><br>
+  <p class="lead fw-normal text-muted mb-0">La Scrambler® Nightshift si distingue per il suo esclusivo stile e carattere. La sella rinnovata, con la sua texture distintiva, si abbina perfettamente alla livrea verde smeraldo, esaltando l’attitudine elegante e senza tempo della moto.</p><br>
+   <p class="lead fw-normal text-muted mb-0">A partire da 9900 €</p></div></div></div>
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-danger btn-sm" href="#panigale">
+
+                        <i class="bi bi-caret-down fs-1 lampeggiante"></i></a></div>
+           </section>
+             <!--Modello tre stessa composizione del modello 1-->
+            <section class="py-5 bg-light" id="panigale">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/img/Panigale-V4.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Panigale V4</h2>
+                            <p class="lead fw-normal text-muted mb-0">La Panigale V4 è una moto sportiva che offre prestazioni eccezionali sia su strada che in pista. Con il suo design aerodinamico e il motore potente, è la scelta perfetta per gli amanti della velocità.</p><br>
+                  <p class="lead fw-normal text-muted mb-0">La Panigale V4 si distingue per il suo esclusivo stile e carattere. La sella rinnovata, con la sua texture distintiva, si abbina perfettamente alla livrea rossa, esaltando l’attitudine elegante e senza tempo della moto.</p><br>
+       <p class="lead fw-normal text-muted mb-0">A partire da 19900 €</p></div></div></div>
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-danger btn-sm" href="#diavel">
+                        <i class="bi bi-caret-down fs-1 lampeggiante"></i></a></div>
+           </section>
+            <!-- Sostenibilità section composta da elemento Card di Bootstrap: su una riga sono posizionate 3 colonne in caso di display superiore ai 991px, in caso di schermi inferiori o uguali gli elementi vegono posizionati su righe differenti, qunidi una colonna e riga-->
+                <section class="py-2 bg-light" id="sostenibilità">
+                    <div class="container px-5 my-4">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="text-center">
+                                    <p class="lead fw-normal text-muted mb-5">SOSTENIBILITA'</p>
+                                    <h2 class="fw-bolder">La tutela dell'ambiente</h2>
+<!--classe lead con grandezza fw-normal e colere piu chiaro del testo con text-muted e spaziatura mb-0-->
+                                    <p class="lead fw-normal text-muted mb-0">Ducati è impegnata a ridurre l'impatto ambientale delle sue attività e a promuovere la sostenibilità in tutte le sue forme. Scopri le nostre iniziative per un futuro più verde.</p><br></div></div></div>
+                        <div class="row gx-5">
+                            <div class="col-lg-4 mb-5">
+<!--classe card con spazio in altezza 100px leggero effetto ombra e bordo 0-->
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="assets/img/Produzione-01.jpg" alt="..." />
+                                    <div class="card-body p-4">
+                                        <a class="text-decoration-none link-dark stretched-link" href="#Produzione"><h5 class="card-title mb-3">Sostenibilità ambientale</h5></a>
+                                        <p class="card-text mb-0">Produzione</p></div></div></div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="assets/img/Prodotto-02.jpg" alt="..." />
+                                    <div class="card-body p-4">
+                                        <a class="text-decoration-none link-dark stretched-link" href="#prodotto"><h5 class="card-title mb-3">Sostenibilità ambientale</h5></a>
+                                        <p class="card-text mb-0">Prodotto</p></div></div></div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <img class="card-img-top" src="assets/img/Eventi-02.jpg" alt="..." />
+                                    <div class="card-body p-4">
+                                        <a class="text-decoration-none link-dark stretched-link" href="#certificazione"><h5 class="card-title mb-3">Sostenibilità ambientale</h5></a>
+                                        <p class="card-text mb-0">Certificazioni</p></div></div></div>
+                            <div class="container px-5 my-3">
+                                <div class="row gx-5 justify-content-center">
+                                     <div class="col-lg-4 col-xl-12">
+                                        <div class="text-center">
+                                           <p class="lead fw-normal text-muted mb-0">Ducati è impegnata a ridurre l'impatto ambientale delle sue attività e a promuovere la sostenibilità in tutte le sue forme. Scopri le nostre iniziative per un futuro più verde.
+                                            Le attività delle imprese possono comportare degli impatti più o meno significativi sull’Ambiente, come ad esempio l’inquinamento delle acque, dell’aria, la produzione di rifiuti e il consumo di risorse. Ducati si impegna a mitigare i potenziali impatti ambientali generati dalle proprie attività, non trascurando nessuna delle sue principali aree di business.</p>  
+                                  </div></div></div></div></div>
+                </section>
+    <!-- Tipi di sostenibilità elemento nav-tab per avere delle cartelle selezionabili attraverso pulsanti che puntano sui rispettivi argomenti-->
+                <section class="py-2" id="Produzione">
+                <div class="container px-5 my-5">
+                    <div><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/img/Produzione.jpg" alt="..." /></div>
+                    <div class="py-5 row justify-content-center">                
+                        <div class="col-lg-12">
+                            <div class="text-center my-4">
+                                <h2 class="fw-bolder">Produzione</h2>
+                                <p class="lead fw-normal text-muted mb-0">Nella propria Politica Ambientale e di Sviluppo Sostenibile, Ducati si impegna a valutare, nella scelta delle tecnologie, delle attrezzature e dello sviluppo dei processi produttivi, il loro impatto nei confronti dell’Ambiente e dei consumi di risorse con l’obiettivo, quando possibile, di minimizzarlo. </p><br>
+<!--Menu selezionabile flessibile con pulsanti che sono riferiti ai diversi argomenti riguardanti la sostenibilità-->
+                                <nav>
+                                    <div class="nav nav-tabs d-grid d-sm-flex justify-content-sm-start pt-5" id="nav-tab" role="tablist">
+                                        <button class="nav-link mb-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-tutela" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tutela dell'aria</button>
+                                        <button class="nav-link mb-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-consumo" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Consumo di energia</button>
+                                        <button class="nav-link mb-0" id="nav-acqua-tab" data-bs-toggle="tab" data-bs-target="#nav-acqua" type="button" role="tab" aria-controls="nav-acqua" aria-selected="false">Consumo di acqua</button>
+                                        <button class="nav-link mb-0" id="nav-gestione-tab" data-bs-toggle="tab" data-bs-target="#nav-gestione" type="button" role="tab" aria-controls="nav-gestione" aria-selected="false">Gestione dei rifiuti</button>
+                                        <button class="nav-link mb-0" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-bio" type="button" role="tab" aria-controls="nav-bio" aria-selected="false">Biomonitoraggio con le api</button>
+                                    </div></nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade show active" id="nav-tutela" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">Per controllare il livello annuale delle proprie emissioni in atmosfera, Ducati utilizza due KPI, così come definiti dalla Capogruppo, che riguardano l’emissione di CO2 e di COV (Composti Organici Volatili). Inoltre Ducati monitora anche le emissioni di sostanze inquinanti, come ad esempio il monossido di carbonio (CO) e gli ossidi di azoto (NOx), prodotte da specifici processi legati sia alla produzione che alle attività dell’R&D.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-consumo" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">Ducati negli anni ha sviluppato diversi progetti con l’obiettivo di produrre e gestire l’energia in maniera più efficiente. Un esempio è stata l’attivazione dell’impianto di trigenerazione nel 2016, sistema che utilizza gas metano per generare contemporaneamente energia elettrica, energia termica ed energia frigorifera. La restante energia elettrica necessaria proviene completamente da fonti rinnovabili ed è acquistata dalla rete. Allo stesso tempo, per ridurre la richiesta del consumo di energia si è dotata di sistemi di building automation.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-acqua" role="tabpanel" aria-labelledby="nav-acqua-tab" tabindex="0">Per monitorare il consumo d’acqua del proprio stabilimento, Ducati utilizza un KPI, così come definito dalla Capogruppo, che ricomprende il consumo di acqua industriale, utilizzata in specifici processi produttivi, e acqua potabile. Ducati si impegna nella riduzione dell’impronta idrica aziendale anche con lo sviluppo di specifici progetti per un utilizzo più efficiente delle risorse idriche.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-gestione" role="tabpanel" aria-labelledby="nav-gestione-tab" tabindex="0">Nella gestione dei rifiuti prodotti è imprescindibile l’attenzione verso la raccolta differenziata, con l’obiettivo di separare il più possibile le diverse famiglie di rifiuti. Ciò consente a Ducati di inviare al recupero mediamente ogni anno il 96% dei suoi rifiuti speciali prodotti. Il KPI utilizzato per la gestione dei rifiuti, così come definito dalla Capogruppo, tiene conto dei soli quantitativi inviati a smaltimento, sia pericolosi che non pericolosi.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-bio" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">Ducati ha avviato un programma di biomonitoraggio con le api per valutare la qualità dell'aria e l'impatto delle proprie attività sull'ambiente. Le api sono indicatori sensibili della salute dell'ecosistema e il loro monitoraggio fornisce dati preziosi per le politiche ambientali dell'azienda.</div>
+                                </div></div></div></div>
+                </section>
+ <!-- Prodotto sezione strutturata nello stesso modo della precedente con argomento Prodotto-->
+            <section class="py-5 bg-light" id="prodotto">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-lg-start">
+                        <div class="col-lg-6 first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/img/Prodotto-soste.jpg" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Prodotto</h2>
+                            <p class="lead fw-normal text-muted mb-0">Ducati si propone di tenere in considerazione la tutela dell’ambiente e le tematiche di sostenibilità ambientale lungo tutte le fasi del ciclo di vita del proprio prodotto, consapevole del contributo che tali pratiche possano apportare al futuro aziendale e del nostro Pianeta. </p>
+                        </div></div>
+                    <div class="row pt-5 justify-content-center">                      
+                        <div class="col-lg-12">
+                            <div class="text-center my-4">
+                                 <h4>Risorse e materie prime</h4>
+                                <p class="lead fw-normal text-muted mb-0">Approvvigionamenti di risorse e materie prime Ducati, in accordo con la sua Politica Ambientale e di Sviluppo Sostenibile, ha messo in campo diverse attività che coinvolgono i propri fornitori diretti e indiretti. Ad esempio, per valutarne anche le performance ambientali, è in corso l’introduzione di un indicatore di sostenibilità utile nella scelta dei nuovi fornitori mentre è già da qualche anno avviata l’attività di auditing ambientale in campo parallelamente a quella svolta dalla qualità.</p>
+                                <nav>
+                                    <div class="nav nav-tabs d-grid d-sm-flex justify-content-sm-start" id="nav-tab" role="tablist">
+                                        <button class="nav-link mb-0 active" id="nav-risorse-tab" data-bs-toggle="tab" data-bs-target="#nav-risorse" type="button" role="tab" aria-controls="nav-risorse" aria-selected="true">Risorse e Materie prime</button>
+                                        <button class="nav-link mb-0" id="nav-prog-tab" data-bs-toggle="tab" data-bs-target="#nav-prog" type="button" role="tab" aria-controls="nav-prog" aria-selected="false">Progettazione</button>
+                                        <button class="nav-link mb-0" id="nav-produ-tab" data-bs-toggle="tab" data-bs-target="#nav-produ" type="button" role="tab" aria-controls="nav-produ" aria-selected="false">Produzione</button>
+                                        <button class="nav-link mb-0" id="nav-distrib-tab" data-bs-toggle="tab" data-bs-target="#nav-distrib" type="button" role="tab" aria-controls="nav-distrib" aria-selected="false">Distribuzione</button>
+                                        <button class="nav-link mb-0" id="nav-end-tab" data-bs-toggle="tab" data-bs-target="#nav-end" type="button" role="tab" aria-controls="nav-end" aria-selected="false">End of Life</button></div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade show active" id="nav-risorse" role="tabpanel" aria-labelledby="nav-risorse-tab" tabindex="0">Approvvigionamenti di risorse e materie prime, Ducati, in accordo con la sua Politica Ambientale e di Sviluppo Sostenibile, ha messo in campo diverse attività che coinvolgono i propri fornitori diretti e indiretti. Ad esempio, per valutarne anche le performance ambientali, è in corso l’introduzione di un indicatore di sostenibilità utile nella scelta dei nuovi fornitori mentre è già da qualche anno avviata l’attività di auditing ambientale in campo parallelamente a quella svolta dalla qualità.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-prog" role="tabpanel" aria-labelledby="nav-prog-tab" tabindex="0">Una delle fasi di progettazione dei motoveicoli in Ducati è la prototipazione dei nuovi modelli/componenti, anche attraverso l’utilizzo dei virtual mock up e della fluidodinamica computazionale. Questo consente di ridurre il numero di prototipi fisici creati e le conseguenti prove su strada e su pista dei veicoli, riducendo così sia i rifiuti prodotti che gli inquinanti emessi in atmosfera.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-produ" role="tabpanel" aria-labelledby="nav-produ-tab" tabindex="0">A partire dal 2014, Ducati ha intrapreso una campagna di sostituzione dei solventi contenenti Composti Organici Volatili (COV) utilizzati nei propri processi produttivi a favore di detergenti a base acqua o con solventi a bassissimo tenore di COV, riducendo così l’emissione di inquinanti in atmosfera. Queste sostanze infatti, sono ritenute tra i principali responsabili dei cambiamenti climatici globali. Di conseguenza, anche il quantitativo di solvente organico esausto inviato allo smaltimento si è fortemente ridotto.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-distrib" role="tabpanel" aria-labelledby="nav-distrib-tab" tabindex="0">L’inserimento nel capitolato logistico aziendale di brevi indicazioni ambientali circa le caratteristiche di sostenibilità degli imballaggi entro cui vengono approvvigionati componenti e materiali è un’attività che concorre, insieme ad altri progetti specifici in fase di studio, alla riduzione dell’impatto ambientale dovuto alla logistica della supply chain.</div>
+                                    <div class="tab-pane py-5 lead fw-normal text-muted mb-0 fade" id="nav-end" role="tabpanel" aria-labelledby="nav-end-tab" tabindex="0">La maggior parte dei componenti delle moto Ducati sono costituiti da materiali riciclabili, come ad esempio plastica e gomma, metalli, componenti elettronici. Mediamente, la percentuale dei componenti riciclabili sul totale dei componenti moto è superiore al 90%. Per facilitare la corretta gestione in caso di smaltimento, i principali componenti in plastica riciclabile sono identificati con l’apposito simbolo.</div></div></div></div></div>
+            </section>
+<!--sezione Certificati da scaricare attraverso pulsanti con link ai 2 file pdf-->
+                <section class="py-5" id="certificazione">
+                    <div class="container px-5 my-4">
+                        <div class="text-center my-4">
+                            <h2 class="fw-bolder">Certificazioni ambientali</h2>
+                            <p class="lead fw-normal text-muted mb-0">Come parte integrante della strategia aziendale "TOGETHER - Strategy 2025", il Gruppo Volkswagen ha compiuto un ulteriore passo verso la propria trasformazione in una società totalmente orientata alla sostenibilità attraverso l'adozione di una nuova Mission Ambientale di Gruppo denominata "goTOzero". 
+"GoTOzero" è incentrata principalmente su quattro ambiti (cambiamento climatico, risorse, qualità dell'aria e compliance ambientale), fornendo un orientamento strategico per i programmi ambientali sia a livello di Gruppo che di marchio. Per quanto riguarda il cambiamento climatico, l'obiettivo è diventare un'impresa a emissioni zero di CO2 entro il 2050.
+GoTOzero MISSION STATEMENT Volkswagen ha anche rilasciato la nuova Politica Ambientale sulla quale basare i propri processi decisionali e definire le performance in ambito ambientale. È fondata su 5 principi: leadership, compliance, protezione ambientale, coinvolgimento degli stakeholder e miglioramento continuo.   </p><br>
+                        </div>
+                            <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="card">
+                                <div class="card-body">
+                <h5 class="card-title">Certificazioni ISO 14001 - Sistema di gestione ambientale</h5>
+                                    <p class="card-text">A garanzia del lavoro fatto, nel 2014 Ducati ha ottenuto la Certificazione secondo lo standard della Norma UNI EN ISO 14001 del proprio Sistema di Gestione Ambientale.</p>
+<!--link al file ISO-14001 Certificato di sistema di Gestione in cui si certifica che il sitema di gestione Ducati è conforme allo Standard ISO 14001:2015, nel seguente campo applicativo: Progettazione, prototipazione, produzione mediante trattamenti termici, lavorazioni meccaniche, assemblaggio, collaudi su strada e in pista di motoveicoli di serie destinati alla vendita al pubblico e di motoveicoli da corsa utilizzati in competizioni sportive (IAF 22)-->
+     <a href="ISO-14001.pdf" class="btn btn-outline-danger">Scarica</a></div></div></div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                <div class="card-body">
+<!--link al file ISO-50001 Certificato di sistema di gestione in cui si certifica che il sitema è conforme allo standard ISO 50001:2018, nel seguente campo applicativo: Gestione dell’energia nella prototipazione, produzione mediante trattamenti termici, lavorazioni meccaniche, assemblaggio, collaudi di motoveicoli di serie destinati alla vendita al pubblico e di motoveicoli da corsa utilizzati in competizioni sportive. Gestione dell’impianto di Trigenerazione. (Area Tecnica: Industria Pesante)-->
+             <h5 class="card-title">Certificazioni ISO 50001 - Sistema di gestione dell'energia</h5>
+<p class="card-text">Nel 2024 Ducati ha ottenuto la Certificazione UNI EN ISO 50001 per il Sistema di Gestione dell'Energia, mirata a monitorare e ottimizzare i consumi energetici, migliorando così le prestazioni delle proprie attività.</p>
+                                    <a href="ISO-50001.pdf" class="btn btn-outline-danger">Scarica</a>
+                                </div></div></div></div></div></section>
+        </main>
+        <!--Footer sezione finale del sito -->
+        <footer class="bg-dark py-2">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Aniello Cipriano 2025</div></div></div></div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>   
+<script src="js/scripts.js"></script>
+    </body>
+</html>
